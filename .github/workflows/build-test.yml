@@ -50,15 +50,6 @@ jobs:
       - name: Build CSS
         run: npm run compile:css
 
-      - name: Build CSS-RTL
-        run: npm run compile:rtl
-
-      - name: Lint JS
-        run: npm run lint:js
-
-      - name: Build JS
-        run: npm run build
-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:

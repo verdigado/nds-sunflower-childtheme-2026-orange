@@ -7,7 +7,8 @@
     "watch": "sass sass/style.scss ./style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:css": "sass sass/style.scss ./style.css && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
-    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'"
+    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
+    "bundle": "cd ../ && dir-archiver --src nds-sunflower-childtheme-2026-orange --dest nds-sunflower-childtheme-2026-orange.zip --includebasedir true --exclude Makefile .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json phpcs.xml.dist sass style.css.map"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,7 @@
   "devDependencies": {
     "@wordpress/scripts": "^30.27.0",
     "@wordpress/stylelint-config": "^23.30.0",
-    "sass": "^1.93.2"
-  },
-  "dependencies": {
-    "svgo": "^4.0.0"
+    "sass": "^1.93.2",
+    "dir-archiver": "^2.1.0"
   }
 }
