@@ -1,0 +1,47 @@
+
+.sunflower-candidate h1 {
+  padding: 0;
+  margin: 0;
+}
+.sunflower-candidate h2 {
+  padding: 0;
+  margin: 0;
+}
+.sunflower-candidate .wp-block-column .wp-block-group {
+  padding: 1.5rem;
+}
+.sunflower-candidate p {
+  padding: 0;
+}
+.sunflower-candidate .wp-block-cover {
+  padding-left: 0;
+}
+.sunflower-candidate .wp-block-cover p {
+  margin: 0;
+  line-height: normal;
+}
+.sunflower-candidate .wp-block-cover p.has-background {
+  display: inline-block;
+  position: relative;
+  padding: 0 2rem;
+}
+.sunflower-candidate .wp-block-cover p.has-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1em;
+  width: 1.1em;
+  height: 100%;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+}
+.sunflower-candidate .wp-block-cover p.has-mint-background-color {
+  background: var(--mint);
+  color: #000000;
+}
+.sunflower-candidate .wp-block-cover p.has-orange-background-color {
+  background: var(--orange);
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Orange",
+                    "slug": "orange",
+                    "color": "#e94e2b"
+                },
+                {
+                    "name": "Mint",
+                    "slug": "mint",
+                    "color": "#c2e1d3"
+                }
+            ]
+        },
+		"typography": {
+			"dropCap": false,
+			"fluid": true,
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{ "slug": "small", "size": "18px", "name": "Small" },
+				{ "slug": "medium", "size": "20px", "name": "Medium" },
+				{ "slug": "large", "size": "40px", "name": "Large" },
+				{ "slug": "huge", "size": "60px", "name": "Huge" }
+			],
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-regular.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-italic.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700.ttf"
+							]
+						},
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700italic.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700italic.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"PT Sans\", sans-serif",
+					"name": "PT Sans",
+					"slug": "pt-sans"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Barlow ExtraBold",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Barlow-ExtraBold.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Barlow\", sans-serif",
+					"name": "Barlow",
+					"slug": "barlow"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Barlow Condensed ExtraBold",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/BarlowCondensed-ExtraBold.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Barlow Condensed ExtraBold\", sans-serif",
+					"name": "Barlow Condensed ExtraBold",
+					"slug": "barlow-condensed"
+				}
+			]
+		}
+    }
+}

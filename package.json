@@ -1,0 +1,31 @@
+{
+  "name": "nds-sunflower-childtheme-2026-orange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass sass/style.scss ./style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:css": "sass sass/style.scss ./style.css && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verdigado/nds-sunflower-childtheme-2026-orange.git"
+  },
+  "keywords": [],
+  "author": "verdigado eG",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/verdigado/nds-sunflower-childtheme-2026-orange/issues"
+  },
+  "homepage": "https:/github.com/verdigado/nds-sunflower-childtheme-2026-orange",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.27.0",
+    "@wordpress/stylelint-config": "^23.30.0",
+    "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "svgo": "^4.0.0"
+  }
+}
