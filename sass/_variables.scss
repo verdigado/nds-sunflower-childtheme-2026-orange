@@ -1,9 +1,9 @@
 @use "sass:map";
 
 $custom-colors: (
-    "tanne": #005538,
-    "orange": #e94e2b,
-    "grey-100": #f3faf6
+	"tanne": #005538,
+	"orange": #e94e2b,
+	"grey-100": #f3faf6
 );
 
 $sunflower-fonts-path: "assets/fonts";
@@ -18,4 +18,4 @@ $btn-bg-color-hover: #fff;
 
 $body-background-color: map.get($custom-colors, "orange");
 
-$body-color: #000000;
+$body-color: #000;
