@@ -59,10 +59,12 @@
         margin: 0;
     }
 
-    .wp-block-column {
+    &.wp-block-columns {
+        .wp-block-column {
 
-        .wp-block-group {
-            padding: 1.5rem;
+            .wp-block-group {
+                padding: 1.5rem;
+            }
         }
     }
 
