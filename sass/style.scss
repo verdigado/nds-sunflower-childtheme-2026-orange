@@ -20,105 +20,105 @@
 
 .theme--default {
 
-	h1,
-	h2,
-	h3,
-	.bloginfo-name {
-		font-family: "Barlow ExtraBold", sans-serif;
-		font-weight: 900;
-	}
+    h1,
+    h2,
+    h3,
+    .bloginfo-name {
+        font-family: "Barlow ExtraBold", sans-serif;
+        font-weight: 900;
+    }
 
-	.bloginfo-description {
-		font-family: "Barlow Condensed ExtraBold", sans-serif;
-		font-weight: 900;
-	}
+    .bloginfo-description {
+        font-family: "Barlow Condensed ExtraBold", sans-serif;
+        font-weight: 900;
+    }
 }
 
 .site-footer {
-	background-color: $body-background-color;
-	$color: $body-color;
+    background-color: $body-background-color;
+    $color: $body-color;
 
-	a {
-		font-weight: 900;
-	}
+    a {
+        font-weight: 900;
+    }
 }
 
 .header-personal .img-container.sunflower-logo {
-	background-color: $body-background-color;
+    background-color: $body-background-color;
 }
 
 .sunflower-candidate {
 
-	h1 {
-		padding: 0;
-		margin: 0;
-	}
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
 
-	h2 {
-		padding: 0;
-		margin: 0;
-	}
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
 
-	.wp-block-column {
+    .wp-block-column {
 
-		.wp-block-group {
-			padding: 1.5rem;
-		}
-	}
+        .wp-block-group {
+            padding: 1.5rem;
+        }
+    }
 
-	p {
-		padding: 0;
-	}
+    p {
+        padding: 0;
+    }
 
-	.wp-block-cover {
-		padding-left: 0;
+    .wp-block-cover {
+        padding-left: 0;
 
-		p {
-			margin: 0;
-			line-height: normal;
+        p {
+            margin: 0;
+            line-height: normal;
 
-			&.has-background {
-				display: inline-block;
-				position: relative;
-				padding: 0 2rem;
+            &.has-background {
+                display: inline-block;
+                position: relative;
+                padding: 0 2rem;
 
-				&::after {
-					content: "";
-					position: absolute;
-					top: 0;
-					right: -1em;
-					width: 1.1em;
-					height: 100%;
-					background: inherit;
-					clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
-				}
-			}
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -1em;
+                    width: 1.1em;
+                    height: 100%;
+                    background: inherit;
+                    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+                }
+            }
 
-			&.has-mint-background-color {
-				color: $body-color;
-			}
+            &.has-mint-background-color {
+                color: $body-color;
+            }
 
-			&.has-orange-background-color {
-				color: #fff;
-			}
+            &.has-orange-background-color {
+                color: #fff;
+            }
 
-		}
+        }
 
-		.stoerer {
-			font-family: "Barlow ExtraBold", sans-serif;
-			background-color: var(--wp--preset--color--orange);
-			left: 4rem;
-			top: -1rem;
+        .stoerer {
+            font-family: "Barlow ExtraBold", sans-serif;
+            background-color: var(--wp--preset--color--orange);
+            left: 4rem;
+            top: -1rem;
 
-			.icon-cross {
+            .icon-cross {
 
-				width: 4rem;
-				height: 4rem;
-				background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJoYW5kLWRyYXduLW1pbnQtY3Jvc3MiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNjMmUxZDMiIHN0cm9rZS1kYXNoYXJyYXk9IjQsIDIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI4IiBkPSJNNTcuMDUgMTYuODdjLTYuMzIzLjI0NS0xNS40OTYuMjcxLTIyLjkxMyA0LjIzNkMyMy4yODggMjYuOTA2IDE1IDM4LjUxOCAxNSA1MGMwIDE5LjMzIDE0LjA1OSAzNS4xNTkgMzMuMzg5IDM1LjE1OSAxMC40NzQgMCAyNi43NzMtMy45NzcgMzMuMTg3LTE2Ljg3NSA1LjQyMy0xMC45MDUgNS4yNjctMzAuMDctMi4wOTgtMzYuODUiIHN0eWxlPSJkaXNwbGF5OmlubGluZSIvPjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWRhc2hhcnJheT0iMiwgMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGQ9Ik0zMC4xMDcgMzUuNDMzYzMuNTE2IDcuOTc2IDUuNTk0IDkuNzU5IDEwLjUzIDE1LjU4IDAgMCA4Ljg3MyA1LjU2IDEzLjMyMiA4LjMyMiAzLjgyNyAyLjM3NSA3LjQ3IDUuMDgzIDExLjUwMSA3LjA5NCAxLjE3Ny41ODcgMy42NzYgMS40MzYgMy42NzYgMS40MzYiIHN0eWxlPSJkaXNwbGF5OmlubGluZSIvPjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWRhc2hhcnJheT0iMiwgMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGQ9Ik04NS4zNiAxNi44N0M3Mi43IDIzLjEyIDYxLjM5NSAyOS42OTcgNDguNDM1IDQzLjk0MmMtMTEuNDY4IDE1LjM5LTEyLjcxNCAxNy41MTMtMTQuNjcgMjMuNzQ0IiBzdHlsZT0iZGlzcGxheTppbmxpbmU7ZmlsbDpub25lO2ZpbGwtb3BhY2l0eToxIi8+PC9zdmc+);
-				background-size: contain;
-				background-repeat: no-repeat;
-			}
-		}
+                width: 4rem;
+                height: 4rem;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJoYW5kLWRyYXduLW1pbnQtY3Jvc3MiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNjMmUxZDMiIHN0cm9rZS1kYXNoYXJyYXk9IjQsIDIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI4IiBkPSJNNTcuMDUgMTYuODdjLTYuMzIzLjI0NS0xNS40OTYuMjcxLTIyLjkxMyA0LjIzNkMyMy4yODggMjYuOTA2IDE1IDM4LjUxOCAxNSA1MGMwIDE5LjMzIDE0LjA1OSAzNS4xNTkgMzMuMzg5IDM1LjE1OSAxMC40NzQgMCAyNi43NzMtMy45NzcgMzMuMTg3LTE2Ljg3NSA1LjQyMy0xMC45MDUgNS4yNjctMzAuMDctMi4wOTgtMzYuODUiIHN0eWxlPSJkaXNwbGF5OmlubGluZSIvPjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWRhc2hhcnJheT0iMiwgMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGQ9Ik0zMC4xMDcgMzUuNDMzYzMuNTE2IDcuOTc2IDUuNTk0IDkuNzU5IDEwLjUzIDE1LjU4IDAgMCA4Ljg3MyA1LjU2IDEzLjMyMiA4LjMyMiAzLjgyNyAyLjM3NSA3LjQ3IDUuMDgzIDExLjUwMSA3LjA5NCAxLjE3Ny41ODcgMy42NzYgMS40MzYgMy42NzYgMS40MzYiIHN0eWxlPSJkaXNwbGF5OmlubGluZSIvPjxwYXRoIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWRhc2hhcnJheT0iMiwgMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjgiIGQ9Ik04NS4zNiAxNi44N0M3Mi43IDIzLjEyIDYxLjM5NSAyOS42OTcgNDguNDM1IDQzLjk0MmMtMTEuNDY4IDE1LjM5LTEyLjcxNCAxNy41MTMtMTQuNjcgMjMuNzQ0IiBzdHlsZT0iZGlzcGxheTppbmxpbmU7ZmlsbDpub25lO2ZpbGwtb3BhY2l0eToxIi8+PC9zdmc+);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
 
-	}
+    }
 }
