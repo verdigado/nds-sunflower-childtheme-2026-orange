@@ -61,7 +61,7 @@ jobs:
 
       - name: Rename ZIP file
         run: |
-          mv ../sunflower.zip sunflower-${{ github.event.release.tag_name }}.zip
+          mv ../nds-sunflower-childtheme-2026-orange.zip nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip
 
       - name: Upload Release
         uses: ncipollo/release-action@v1
