@@ -34,12 +34,3 @@ endif;
 add_action( 'wp_enqueue_scripts', 'sunflower_child_theme_configurator_css', 10 );
 
 require_once 'functions/block-patterns.php';
-
-/**
- * Add editor styles.
- */
-function sunflower_child_theme_sunflower_setup() {
-		add_editor_style( '/assets/css/editor-style.css' );
-}
-
-add_action( 'after_setup_theme', 'sunflower_child_theme_sunflower_setup', 10 );

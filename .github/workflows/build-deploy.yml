@@ -94,4 +94,4 @@ jobs:
         env:
             PAGEID: 1952
         run: |
-            rsync -a nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip version.txt changelog.html production:/var/www/updateserver/nds-sunflower-childtheme-2026-orange/
+            rsync -a nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip version.txt production:/var/www/updateserver/nds-sunflower-childtheme-2026-orange/
