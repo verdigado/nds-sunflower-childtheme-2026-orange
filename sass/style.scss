@@ -17,12 +17,12 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 @import "variables";
 @import "fonts";
 
-
 .theme--default {
 
     h1,
     h2,
     h3,
+    h4,
     .bloginfo-name {
         font-family: "Barlow ExtraBold", sans-serif;
         font-weight: 900;
@@ -31,6 +31,59 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
     .bloginfo-description {
         font-family: "Barlow Condensed ExtraBold", sans-serif;
         font-weight: 900;
+    }
+
+    .site-main {
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Barlow ExtraBold", sans-serif;
+            color: var(--wp--preset--color--orange);
+        }
+    }
+
+    // Buttons
+    .wp-block-button {
+        &__link {
+            background-color: var(--wp--preset--color--orange);
+            color: #fff;
+        }
+    }
+
+    .roofline {
+        color: var(--wp--preset--color--orange);
+    }
+    .sunflower-post-navigation div a,
+    a {
+        color: var(--wp--preset--color--orange);
+
+        &.event-card {
+            article {
+                .h2,
+                h2 {
+                    color: var(--wp--preset--color--orange);
+                }
+            }
+        }
+    }
+
+    .sunflower-post-navigation div a {
+        border: 1px solid var(--wp--preset--color--orange);
+        &:hover {
+            background-color: var(--wp--preset--color--orange);
+            color: #fff;
+        }
+    }
+    button.filter {
+        &:hover {
+            color: var(--wp--preset--color--orange);
+            border-bottom-color: var(--wp--preset--color--orange);
+        }
+    }
+
+    .bg-primary {
+        background-color: var(--wp--preset--color--orange) !important;
     }
 }
 
@@ -45,6 +98,44 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
 .header-personal .img-container.sunflower-logo {
     background-color: $body-background-color;
+}
+
+
+input[type="submit"] {
+    background-color: var(--wp--preset--color--orange);
+}
+
+
+// Navbar
+.navbar-light .navbar-nav  {
+    .nav-link {
+        &:hover {
+            color: var(--wp--preset--color--orange);
+        }
+    }
+
+    > .nav-item {
+        &.active {
+            a {
+                color: var(--wp--preset--color--orange);
+            }
+        }
+        &:hover {
+            border-bottom: 4px solid var(--wp--preset--color--orange);
+        }
+    }
+}
+
+.dropdown-menu {
+    ul {
+        li {
+            a {
+                &:hover {
+                    color: var(--wp--preset--color--orange);
+                }
+            }
+        }
+    }
 }
 
 .sunflower-candidate {

@@ -86,9 +86,9 @@
 							]
 						}
 					],
-					"fontFamily": "\"Barlow\", sans-serif",
-					"name": "Barlow",
-					"slug": "barlow"
+					"fontFamily": "\"Barlow ExtraBold\", sans-serif",
+					"name": "Barlow ExtraBold",
+					"slug": "barlow-extrabold"
 				},
 				{
 					"fontFace": [
@@ -109,5 +109,66 @@
 				}
 			]
 		}
-    }
+    },
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var:preset|color|orange",
+					"text": "var:preset|color|white"
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"fontWeight": "400"
+				}
+			}
+		},
+		"typography": {
+			"fontWeight": "400",
+			"fontFamily": "var(--wp--preset--font-family--pt-sans)"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "45px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "31px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "27px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "27px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			}
+		}
+	}
 }
