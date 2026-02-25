@@ -34,6 +34,7 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
     }
 
     .site-main {
+
         h1,
         h2,
         h3,
@@ -45,6 +46,7 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
     // Buttons
     .wp-block-button {
+
         &__link {
             background-color: var(--wp--preset--color--orange);
             color: #fff;
@@ -54,12 +56,15 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
     .roofline {
         color: var(--wp--preset--color--orange);
     }
+
     .sunflower-post-navigation div a,
     a {
         color: var(--wp--preset--color--orange);
 
         &.event-card {
+
             article {
+
                 .h2,
                 h2 {
                     color: var(--wp--preset--color--orange);
@@ -70,12 +75,15 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
     .sunflower-post-navigation div a {
         border: 1px solid var(--wp--preset--color--orange);
+
         &:hover {
             background-color: var(--wp--preset--color--orange);
             color: #fff;
         }
     }
+
     button.filter {
+
         &:hover {
             color: var(--wp--preset--color--orange);
             border-bottom-color: var(--wp--preset--color--orange);
@@ -107,19 +115,24 @@ input[type="submit"] {
 
 
 // Navbar
-.navbar-light .navbar-nav  {
+.navbar-light .navbar-nav {
+
     .nav-link {
+
         &:hover {
             color: var(--wp--preset--color--orange);
         }
     }
 
     > .nav-item {
+
         &.active {
+
             a {
                 color: var(--wp--preset--color--orange);
             }
         }
+
         &:hover {
             border-bottom: 4px solid var(--wp--preset--color--orange);
         }
@@ -127,9 +140,13 @@ input[type="submit"] {
 }
 
 .dropdown-menu {
+
     ul {
+
         li {
+
             a {
+
                 &:hover {
                     color: var(--wp--preset--color--orange);
                 }
