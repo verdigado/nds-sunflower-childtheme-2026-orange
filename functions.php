@@ -12,9 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'SUNFLOWER_CHILD_THEME_VERSION' ) ) {
-	$sunflower_theme_data    = wp_get_theme( get_option( 'template' ) );
-	$sunflower_theme_version = $sunflower_theme_data->version;
-	define( 'SUNFLOWER_CHILD_THEME_VERSION', $sunflower_theme_version );
+	$sunflower_childtheme_version = wp_get_theme()->get( 'Version' );
+	define( 'SUNFLOWER_CHILD_THEME_VERSION', $sunflower_childtheme_version );
 }
 
 
