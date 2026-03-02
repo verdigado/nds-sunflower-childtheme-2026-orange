@@ -1,6 +1,8 @@
+@use "variables";
+
 @font-face {
     font-family: "Barlow ExtraBold";
-    src: url("#{$sunflower-fonts-path}/Barlow-ExtraBold.woff2") format("woff2");
+    src: url("#{variables.$sunflower-fonts-path}/Barlow-ExtraBold.woff2") format("woff2");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -11,7 +13,7 @@
 
 @font-face {
     font-family: "Barlow Condensed ExtraBold";
-    src: url("#{$sunflower-fonts-path}/BarlowCondensed-ExtraBold.woff2") format("woff2");
+    src: url("#{variables.$sunflower-fonts-path}/BarlowCondensed-ExtraBold.woff2") format("woff2");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
