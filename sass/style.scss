@@ -5,7 +5,7 @@ Description:  Sunflower child-theme for Niedersachsen 2026 campaign (orange)
 Author:       verdigado eG
 Author URI:   https://verdigado.com
 Template:     sunflower
-Version: 0.2.1
+Version: 0.2.2
 Tested up to: 6.9
 Requires PHP: 8.2
 Text Domain:  sunflower
@@ -15,8 +15,8 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
 */
 
 
-@import "variables";
-@import "fonts";
+@use "variables";
+@use "fonts";
 
 .theme--default {
 
@@ -97,16 +97,17 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
 }
 
 .site-footer {
-    background-color: $body-background-color;
-    $color: $body-color;
+    background-color: variables.$body-background-color;
+    $color: variables.$body-color;
 
     a {
         font-weight: 900;
+        color: #fff;
     }
 }
 
 .header-personal .img-container.sunflower-logo {
-    background-color: $body-background-color;
+    background-color: variables.$body-background-color;
 }
 
 
@@ -207,7 +208,7 @@ input[type="submit"] {
             }
 
             &.has-mint-background-color {
-                color: $body-color;
+                color: variables.$body-color;
             }
 
             &.has-orange-background-color {
