@@ -41,7 +41,7 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
         h3,
         h4 {
             font-family: "Barlow ExtraBold", sans-serif;
-            color: var(--wp--preset--color--orange);
+            color: var(--wp--preset--color--primary);
         }
     }
 
@@ -49,18 +49,18 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
     .wp-block-button {
 
         &__link {
-            background-color: var(--wp--preset--color--orange);
+            background-color: var(--wp--preset--color--primary);
             color: #fff;
         }
     }
 
     .roofline {
-        color: var(--wp--preset--color--orange);
+        color: var(--wp--preset--color--primary);
     }
 
     .sunflower-post-navigation div a,
     a {
-        color: var(--wp--preset--color--orange);
+        color: var(--wp--preset--color--primary);
 
         &.event-card {
 
@@ -68,17 +68,17 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
 
                 .h2,
                 h2 {
-                    color: var(--wp--preset--color--orange);
+                    color: var(--wp--preset--color--primary);
                 }
             }
         }
     }
 
     .sunflower-post-navigation div a {
-        border: 1px solid var(--wp--preset--color--orange);
+        border: 1px solid var(--wp--preset--color--primary);
 
         &:hover {
-            background-color: var(--wp--preset--color--orange);
+            background-color: var(--wp--preset--color--primary);
             color: #fff;
         }
     }
@@ -86,18 +86,18 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
     button.filter {
 
         &:hover {
-            color: var(--wp--preset--color--orange);
-            border-bottom-color: var(--wp--preset--color--orange);
+            color: var(--wp--preset--color--primary);
+            border-bottom-color: var(--wp--preset--color--primary);
         }
     }
 
     .bg-primary {
-        background-color: var(--wp--preset--color--orange) !important;
+        background-color: var(--wp--preset--color--primary) !important;
     }
 }
 
 .site-footer {
-    background-color: variables.$body-background-color;
+    background-color: var(--wp--preset--color--primary);
     $color: variables.$body-color;
 
     a {
@@ -107,12 +107,12 @@ Update URI: https://sunflower-theme.de/updateserver/nds-sunflower-childtheme-202
 }
 
 .header-personal .img-container.sunflower-logo {
-    background-color: variables.$body-background-color;
+    background-color: var(--wp--preset--color--primary);
 }
 
 
 input[type="submit"] {
-    background-color: var(--wp--preset--color--orange);
+    background-color: var(--wp--preset--color--primary);
 }
 
 
@@ -122,7 +122,7 @@ input[type="submit"] {
     .nav-link {
 
         &:hover {
-            color: var(--wp--preset--color--orange);
+            color: var(--wp--preset--color--primary);
         }
     }
 
@@ -131,12 +131,12 @@ input[type="submit"] {
         &.active {
 
             a {
-                color: var(--wp--preset--color--orange);
+                color: var(--wp--preset--color--primary);
             }
         }
 
         &:hover {
-            border-bottom: 4px solid var(--wp--preset--color--orange);
+            border-bottom: 4px solid var(--wp--preset--color--primary);
         }
     }
 }
@@ -150,7 +150,7 @@ input[type="submit"] {
             a {
 
                 &:hover {
-                    color: var(--wp--preset--color--orange);
+                    color: var(--wp--preset--color--primary);
                 }
             }
         }
@@ -219,7 +219,7 @@ input[type="submit"] {
 
         .stoerer {
             font-family: "Barlow ExtraBold", sans-serif;
-            background-color: var(--wp--preset--color--orange);
+            background-color: var(--wp--preset--color--primary);
             left: 4rem;
             top: -1rem;
 
@@ -239,12 +239,15 @@ input[type="submit"] {
 
 // Force custom logo into orange square and make it fit.
 .bloginfo .img-container {
-    display: inline-block;
+
+    &.custom-logo {
+        display: inline-block;
+    }
 
     height: 100px;
     width: 100px;
     min-width: 100px;
-    background-color: var(--wp--preset--color--orange);
+    background-color: var(--wp--preset--color--primary);
 
     &.custom-logo {
         height: 100%;

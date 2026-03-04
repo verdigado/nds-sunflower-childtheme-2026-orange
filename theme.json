@@ -5,12 +5,12 @@
             "palette": [
                 {
                     "name": "Orange",
-                    "slug": "orange",
+                    "slug": "primary",
                     "color": "#e94e2b"
                 },
                 {
                     "name": "Mint",
-                    "slug": "mint",
+                    "slug": "secondary",
                     "color": "#c2e1d3"
                 }
             ]
