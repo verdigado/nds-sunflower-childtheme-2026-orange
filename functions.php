@@ -35,7 +35,7 @@ add_action( 'wp_enqueue_scripts', 'sunflower_child_theme_configurator_css', 10 )
 require_once 'functions/block-patterns.php';
 
 /**
- * un-register widget area.
+ * Un-register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
