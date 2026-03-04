@@ -243,6 +243,7 @@ input[type="submit"] {
 
     height: 100px;
     width: 100px;
+    min-width: 100px;
     background-color: var(--wp--preset--color--orange);
 
     &.custom-logo {
