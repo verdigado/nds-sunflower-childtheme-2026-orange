@@ -235,3 +235,32 @@ input[type="submit"] {
 
     }
 }
+
+
+// Force custom logo into orange square and make it fit.
+.bloginfo .img-container {
+    display: inline-block;
+
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    background-color: var(--wp--preset--color--orange);
+
+    &.custom-logo {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        .custom-logo-link {
+            display: block;
+            height: 100%;
+        }
+
+        img {
+            object-position: left;
+            padding: 10px;
+            max-width: unset !important;
+            max-height: unset !important;
+        }
+    }
+}

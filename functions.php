@@ -33,3 +33,14 @@ endif;
 add_action( 'wp_enqueue_scripts', 'sunflower_child_theme_configurator_css', 10 );
 
 require_once 'functions/block-patterns.php';
+
+/**
+ * Un-register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function sunflower_child_widgets_init() {
+	unregister_sidebar( 'sidebar-1' );
+}
+
+add_action( 'widgets_init', 'sunflower_child_widgets_init', 99 );
