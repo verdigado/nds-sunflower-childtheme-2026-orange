@@ -90,7 +90,7 @@
 
 .sunflower-candidate .wp-block-cover .stoerer {
   font-family: "Barlow ExtraBold", sans-serif;
-  background-color: var(--wp--preset--color--orange);
+  background-color: var(--wp--preset--color--primary);
   left: 4rem;
   top: -1rem;
 }
