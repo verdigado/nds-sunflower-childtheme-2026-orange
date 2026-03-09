@@ -7,7 +7,7 @@
     "watch": "sass sass/style.scss ./style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:css": "sass sass/style.scss ./style.css && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
-	"make-green": "sed -i  \"s/Text Domain.*/Text Domain: nds-sunflower-childtheme-2026-green/\" sass/style.scss && cp -r styles/green/* .",
+	"make-green": "sed -i  \"s/Theme Name.*/Theme Name: NDS Kampagnendesign 2026 (green)/\" sass/style.scss && sed -i  \"s/Text Domain.*/Text Domain: nds-sunflower-childtheme-2026-green/\" sass/style.scss && cp -r styles/green/* .",
     "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
     "bundle-orange": "cd ../ && dir-archiver --src nds-sunflower-childtheme-2026-orange --dest nds-sunflower-childtheme-2026-orange.zip --includebasedir true --exclude Makefile .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules ./vendor/ package-lock.json package.json phpcs.xml.dist sass style.css.map",
     "bundle-green": "cd ../ && dir-archiver --src nds-sunflower-childtheme-2026-green --dest nds-sunflower-childtheme-2026-green.zip --includebasedir true --exclude Makefile .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules ./vendor/ package-lock.json package.json phpcs.xml.dist sass style.css.map"
