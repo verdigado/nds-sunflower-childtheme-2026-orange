@@ -13,6 +13,13 @@ jobs:
   build-deploy-orange:
     runs-on: ubuntu-latest
 
+    env:
+      PROJECT_ROOT: ${{ github.workspace }}/nds-sunflower-childtheme-2026-orange
+
+    defaults:
+      run:
+        working-directory: ${{ env.PROJECT_ROOT }}
+
     steps:
       - uses: actions/checkout@v5
         with:
@@ -99,6 +106,13 @@ jobs:
   build-deploy-green:
     runs-on: ubuntu-latest
     needs: build-deploy-orange
+
+    env:
+      PROJECT_ROOT: ${{ github.workspace }}/nds-sunflower-childtheme-2026-green
+
+    defaults:
+      run:
+        working-directory: ${{ env.PROJECT_ROOT }}
 
     steps:
       - uses: actions/checkout@v5
