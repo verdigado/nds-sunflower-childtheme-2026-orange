@@ -75,9 +75,11 @@ jobs:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip"
-          allowUpdates: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+            artifacts: '${{ env.PROJECT_ROOT }}/nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip'
+            makeLatest: false
+            prerelease: true
+            allowUpdates: true
+            token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Provide deploy_key
         env:
@@ -165,9 +167,11 @@ jobs:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip"
-          allowUpdates: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+            artifacts: '${{ env.PROJECT_ROOT }}/nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip'
+            makeLatest: false
+            prerelease: true
+            allowUpdates: true
+            token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Provide deploy_key
         env:
