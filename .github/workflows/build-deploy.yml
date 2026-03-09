@@ -76,8 +76,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
             artifacts: '${{ env.PROJECT_ROOT }}/nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip'
-            makeLatest: false
-            prerelease: true
             allowUpdates: true
             token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -168,8 +166,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
             artifacts: '${{ env.PROJECT_ROOT }}/nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip'
-            makeLatest: false
-            prerelease: true
             allowUpdates: true
             token: ${{ secrets.GITHUB_TOKEN }}
 
