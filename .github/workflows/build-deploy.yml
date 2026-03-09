@@ -93,8 +93,6 @@ jobs:
         run: echo ${{ github.event.release.tag_name }} > version.txt
 
       - name: rsync zipfile, version and changelog
-        env:
-            PAGEID: 1952
         run: |
             rsync -a nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip version.txt production:/var/www/updateserver/nds-sunflower-childtheme-2026-orange/
 
@@ -161,7 +159,5 @@ jobs:
         run: echo ${{ github.event.release.tag_name }} > version.txt
 
       - name: rsync zipfile, version and changelog
-        env:
-            PAGEID: 1952
         run: |
             rsync -a nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip version.txt production:/var/www/updateserver/nds-sunflower-childtheme-2026-orange/
