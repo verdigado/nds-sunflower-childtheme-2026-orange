@@ -44,3 +44,19 @@ function sunflower_child_widgets_init() {
 }
 
 add_action( 'widgets_init', 'sunflower_child_widgets_init', 99 );
+
+
+/**
+ * Remove sunflower_header_layout as we only support personal header layout in the child theme.
+ */
+function sunflower_child_remove_parent_setting_field() {
+	$page    = 'sunflower-setting-admin';
+	$section = 'sunflower_layout';
+	$field   = 'sunflower_header_layout';
+
+	global $wp_settings_fields;
+	if ( isset( $wp_settings_fields[ $page ][ $section ][ $field ] ) ) {
+		unset( $wp_settings_fields[ $page ][ $section ][ $field ] );
+	}
+}
+add_action( 'admin_init', 'sunflower_child_remove_parent_setting_field', 20 );

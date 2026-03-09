@@ -10,11 +10,13 @@ env:
   NODE_VERSION: 24
 
 jobs:
-  build-deploy:
+  build-deploy-orange:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+            path: nds-sunflower-childtheme-2026-orange
 
       - name: check theme version against tag
         run: |
@@ -52,12 +54,12 @@ jobs:
         run: |
           composer install
 
-      - name: Make bundle
-        run: npm run bundle
-
       - name: fail on fork
         if: github.repository_owner != 'verdigado'
         run: exit 1
+
+      - name: Make bundle
+        run: npm run bundle-orange
 
       - name: Rename ZIP file
         run: |
@@ -91,7 +93,71 @@ jobs:
         run: echo ${{ github.event.release.tag_name }} > version.txt
 
       - name: rsync zipfile, version and changelog
-        env:
-            PAGEID: 1952
         run: |
             rsync -a nds-sunflower-childtheme-2026-orange-${{ github.event.release.tag_name }}.zip version.txt production:/var/www/updateserver/nds-sunflower-childtheme-2026-orange/
+
+  build-deploy-green:
+    runs-on: ubuntu-latest
+    needs: build-deploy-orange
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+            path: nds-sunflower-childtheme-2026-green
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Cache node_modules directory
+        uses: actions/cache@v5
+        id: npm-cache-dir
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install npm packages
+        if: steps.npm-cache-dir.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Make green variant
+        run: npm run make-green
+
+      - name: Build CSS
+        run: npm run compile:css
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+
+      - name: run install composer
+        run: |
+          composer install
+
+      - name: fail on fork
+        if: github.repository_owner != 'verdigado'
+        run: exit 1
+
+      - name: Make bundle
+        run: npm run bundle-green
+
+      - name: Rename ZIP file
+        run: |
+          mv ../nds-sunflower-childtheme-2026-green.zip nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip
+
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip"
+          allowUpdates: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: save version
+        run: echo ${{ github.event.release.tag_name }} > version.txt
+
+      - name: rsync zipfile, version and changelog
+        run: |
+            rsync -a nds-sunflower-childtheme-2026-green-${{ github.event.release.tag_name }}.zip version.txt production:/var/www/updateserver/nds-sunflower-childtheme-2026-orange/

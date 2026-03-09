@@ -1,0 +1,184 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Tanne",
+                    "slug": "primary",
+                    "color": "#005437"
+                },
+                {
+                    "name": "Grashalm",
+                    "slug": "secondary",
+                    "color": "#8abd24"
+                },
+                {
+                    "name": "Olive",
+                    "slug": "color-3",
+                    "color": "#477c1F"
+                },
+				{
+					"name": "Sand",
+					"slug": "color-4",
+					"color": "#f5f1e9"
+				}
+            ]
+        },
+		"typography": {
+			"dropCap": false,
+			"fluid": true,
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{ "slug": "small", "size": "18px", "name": "Small" },
+				{ "slug": "medium", "size": "20px", "name": "Medium" },
+				{ "slug": "large", "size": "40px", "name": "Large" },
+				{ "slug": "huge", "size": "60px", "name": "Huge" }
+			],
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-regular.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-italic.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700.ttf"
+							]
+						},
+						{
+							"fontFamily": "PT Sans",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700italic.woff2",
+								"file:./assets/fonts/pt-sans-v17-latin_latin-ext-700italic.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"PT Sans\", sans-serif",
+					"name": "PT Sans",
+					"slug": "pt-sans"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Barlow ExtraBold",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Barlow-ExtraBold.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Barlow ExtraBold\", sans-serif",
+					"name": "Barlow ExtraBold",
+					"slug": "barlow-extrabold"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Barlow Condensed ExtraBold",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/BarlowCondensed-ExtraBold.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Barlow Condensed ExtraBold\", sans-serif",
+					"name": "Barlow Condensed ExtraBold",
+					"slug": "barlow-condensed"
+				}
+			]
+		}
+    },
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var:preset|color|orange",
+					"text": "var:preset|color|white"
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"fontWeight": "400"
+				}
+			}
+		},
+		"typography": {
+			"fontWeight": "400",
+			"fontFamily": "var(--wp--preset--font-family--pt-sans)"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "45px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "31px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "27px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--barlow-extrabold)",
+					"fontSize": "27px"
+				},
+				"color": {
+					"text": "var:preset|color|orange"
+				}
+			}
+		}
+	}
+}
