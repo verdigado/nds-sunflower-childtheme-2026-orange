@@ -16,6 +16,7 @@ if ( ! defined( 'SUNFLOWER_CHILD_THEME_VERSION' ) ) {
 	define( 'SUNFLOWER_CHILD_THEME_VERSION', $sunflower_childtheme_version );
 }
 
+require_once 'functions/update.php';
 
 if ( ! function_exists( 'sunflower_child_theme_configurator_css' ) ) :
 	/**
