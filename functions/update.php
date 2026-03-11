@@ -14,7 +14,7 @@
  */
 function sunflower_child_update_theme( $transient, $theme_data, $theme_slug ) {
 
-	if ( 'nds-sunflower-childtheme-2026-orange' !== $theme_slug || 'nds-sunflower-childtheme-2026-green' !== $theme_slug ) {
+	if ( 'nds-sunflower-childtheme-2026-orange' !== $theme_slug && 'nds-sunflower-childtheme-2026-green' !== $theme_slug ) {
 		return $transient;
 	}
 	// Include an unmodified $wp_version.

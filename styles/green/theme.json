@@ -19,8 +19,13 @@
                     "color": "#477c1F"
                 },
 				{
-					"name": "Sand",
+					"name": "Klee-700",
 					"slug": "color-4",
+					"color": "#006e2e"
+				},
+				{
+					"name": "Sand",
+					"slug": "color-5",
 					"color": "#f5f1e9"
 				}
             ]
